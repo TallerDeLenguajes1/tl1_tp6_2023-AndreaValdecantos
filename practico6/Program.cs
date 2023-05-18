@@ -6,6 +6,7 @@
 // Console.WriteLine("valor de a:"+a);
 // Console.WriteLine("valor de b:"+b);
 
+//EJERICIO 1
 string numeroAInvertir;
 int numero = 0;
 string numeroInvertido = "";
