@@ -1,10 +1,12 @@
-﻿// Console.WriteLine("Hello, World!");
+// Console.WriteLine("Hello, World!");
 // int a;
 // int b;
 // a=10;
 // b=a;
 // Console.WriteLine("valor de a:"+a);
 // Console.WriteLine("valor de b:"+b);
+
+//EJERCICIO 1
 
 // string numeroAInvertir;
 // int numero = 0;
@@ -28,12 +30,7 @@
 
 // Console.WriteLine(numeroInvertido);
 
-
-// if (int.TryParse(numeroInvertido, out numero))
-// {
-//     Console.WriteLine(numero);
-// }
-
+//EJERCICIO 2
 int eleccion = 1;
 double numero1;
 double numero2;
