@@ -63,8 +63,6 @@ while (eleccion != 0)
         switch (eleccion)
         {
             case 1:
-                Console.WriteLine(numero1);
-                Console.WriteLine(numero2);
                 resultado = numero1 + numero2;
                 Console.WriteLine("Resultado de " + numero1 + " + " + numero2 + " : " + resultado);
                 break;
