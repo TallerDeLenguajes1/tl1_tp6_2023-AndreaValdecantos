@@ -36,13 +36,10 @@
 // }
 
 //EJERCICIO 2
-string operacion;
-int eleccion = 2;
-string numeroA;
-float numero1 = 0;
-string numeroB;
-float numero2 = 0;
-float resultado = 0;
+int eleccion = 1;
+double numero1;
+double numero2;
+double resultado;
 
 while (eleccion != 0)
 {
@@ -55,14 +52,14 @@ while (eleccion != 0)
     Console.WriteLine("-----------");
     Console.WriteLine("OPERACIÓN");
     Console.WriteLine("-----------");
-    operacion = Console.ReadLine();
-    Console.WriteLine("Ingrese un número");
-    numeroA = Console.ReadLine();
-    Console.WriteLine("Ingrese otro número");
-    numeroB = Console.ReadLine();
+    eleccion = Convert.ToInt16(Console.ReadLine());
 
-    if (int.TryParse(operacion, out eleccion) && float.TryParse(numeroA, out numero1) && float.TryParse(numeroB, out numero2))
+    if (eleccion != 0)
     {
+        Console.WriteLine("Ingrese un número");
+        numero1 = Convert.ToDouble(Console.ReadLine());
+        Console.WriteLine("Ingrese otro número");
+        numero2 = Convert.ToDouble(Console.ReadLine());
         switch (eleccion)
         {
             case 1:
@@ -83,12 +80,12 @@ while (eleccion != 0)
                 if (numero2 != 0)
                 {
                     resultado = numero1 / numero2;
+                    Console.WriteLine("Resultado de " + numero1 + " / " + numero2 + " : " + double.Round(resultado, 2));
                 }
                 else
                 {
                     Console.WriteLine("No es posible dividir en cero");
                 }
-                Console.WriteLine("Resultado de " + numero1 + " / " + numero2 + " : " + float.Round(resultado, 2));
                 break;
             default:
                 break;
@@ -97,9 +94,5 @@ while (eleccion != 0)
         Console.WriteLine("Apriete una tecla para continuar");
         Console.ReadKey();
         Console.Clear();
-    }
-    else
-    {
-        Console.WriteLine("Las datos ingresados no son válidos");
     }
 }
